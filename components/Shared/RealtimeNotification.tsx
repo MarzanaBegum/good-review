@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { io } from "socket.io-client";
 import { USER_STATE } from "../../state";
 
-const SOCKET_URL = process.env.NEXT_PUBLIC_SOCKET_URL || " https://good-review.onrender.com";
+const SOCKET_URL = process.env.NEXT_PUBLIC_SOCKET_URL || "https://good-review.onrender.com";
 const socket = io(SOCKET_URL);
 
 function RealtimeNotification() {
